@@ -6,7 +6,6 @@
 
 Write code together in a shared editor, run it instantly, get AI-powered hints, and chat — all in one room, all in real time.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D20-339933?logo=node.js&logoColor=white)](https://nodejs.org)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -72,6 +71,3 @@ Then open **http://localhost:5173**.
 - Interviewer-only "watch mode"
 - More languages via Judge0/Piston fallback
 
-## 📄 License
-
-[MIT](./LICENSE)
