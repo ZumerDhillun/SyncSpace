@@ -2,9 +2,9 @@
 
 # ⚡ SyncSpace
 
-**A real-time collaborative coding platform for technical interview practice, pair programming, and live coding sessions.**
+### Real-Time Collaborative Coding Platform for Technical Interviews & Pair Programming
 
-Write code together in a shared editor, run it instantly, get AI-powered hints, and chat — all in one room, all in real time.
+Write code together in a shared editor, execute it instantly, receive AI-powered hints, and communicate with your partner — all in one seamless real-time workspace.
 
 [![Node](https://img.shields.io/badge/node-%3E%3D20-339933?logo=node.js&logoColor=white)](https://nodejs.org)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev)
@@ -14,40 +14,68 @@ Write code together in a shared editor, run it instantly, get AI-powered hints, 
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-- **Live collaborative editor** — every keystroke synced in real time via CRDT (Y.js), so two people can type in the same file with zero conflicts.
-- **Instant code execution** — run code in JavaScript, TypeScript, Python, Java, C++, Go, and Rust, with output shared to everyone in the room.
-- **AI-powered hints** — a built-in coach nudges you toward the next step without ever handing you the full solution.
-- **Live chat & presence** — see who's in the room and talk through your approach without leaving the editor.
-- **Custom rooms** — attach a problem statement, difficulty, and language; set an expiry; make it private.
-- **Session history** — review the code from any past closed room.
-- **Invite links** — one click to copy a shareable room link.
+- **📝 Live Collaborative Editor**  
+  Every keystroke is synchronized in real time using **Y.js (CRDT)**, allowing multiple users to edit the same file simultaneously without conflicts.
 
-## 🖥️ Tech Stack
+- **⚡ Instant Code Execution**  
+  Execute code in JavaScript, TypeScript, Python, Java, C++, Go, and Rust. Output is instantly shared with everyone in the room.
 
-| Layer | Tech |
-|---|---|
-| Frontend | React, TypeScript, Vite, Tailwind CSS, Zustand, Monaco Editor, Socket.io-client |
-| Backend | Node.js, Express, TypeScript, Socket.io, Y.js (y-websocket) |
-| Database | PostgreSQL (via Prisma ORM) |
-| Cache | Redis |
-| AI | Groq (OpenAI-compatible API) |
-| Code execution | JDoodle Compiler API |
+- **🤖 AI-Powered Coding Hints**  
+  Integrated AI assistant that provides contextual guidance and hints without revealing complete solutions.
 
-## 📁 Project Structure
+- **💬 Live Chat & Presence**  
+  See who is currently in the room and collaborate through an integrated real-time chat.
 
-```
+- **🏠 Custom Interview Rooms**  
+  Create private rooms with configurable programming language, difficulty level, problem statement, expiration time, and invite links.
+
+- **📜 Session History**  
+  Revisit completed coding sessions and review previous solutions anytime.
+
+- **🔗 One-Click Room Sharing**  
+  Instantly generate shareable invite links for seamless collaboration.
+
+---
+
+# 🖥️ Tech Stack
+
+| Layer | Technology |
+|--------|------------|
+| **Frontend** | React, TypeScript, Vite, Tailwind CSS, Zustand, Monaco Editor, Socket.io Client |
+| **Backend** | Node.js, Express, TypeScript, Socket.io, Y.js (y-websocket) |
+| **Database** | PostgreSQL with Prisma ORM |
+| **Caching** | Redis |
+| **AI Integration** | Groq (OpenAI-Compatible API) |
+| **Code Execution** | JDoodle Compiler API |
+
+---
+
+# 📁 Project Structure
+
+```text
 syncspace/
-├── client/     React + TypeScript frontend
-└── server/     Express + TypeScript backend (REST API, Socket.io, Y.js sync server)
+├── client/      # React + TypeScript Frontend
+└── server/      # Express + TypeScript Backend
+                 # REST APIs
+                 # Socket.io Server
+                 # Y.js Synchronization Server
 ```
 
-## 🚀 Getting Started
+---
 
-This repo needs a database, a cache, and two free API keys before it runs.
+# 🚀 Getting Started
 
-Quick version, once your `.env` files are filled in:
+Before running the project, make sure you have:
+
+- Node.js 20+
+- PostgreSQL
+- Redis
+- Groq API Key
+- JDoodle API Credentials
+
+After configuring the required environment variables:
 
 ```bash
 # Terminal 1
@@ -55,19 +83,53 @@ cd server
 npm install
 npx prisma db push
 npm run dev
+```
 
+```bash
 # Terminal 2
 cd client
 npm install
 npm run dev
 ```
 
-Then open **http://localhost:5173**.
+Open your browser and navigate to:
 
-## 🗺️ Roadmap Ideas
+```
+http://localhost:5173
+```
 
-- Voice chat in-room
-- Multi-file project support
-- Interviewer-only "watch mode"
-- More languages via Judge0/Piston fallback
+---
 
+# 🗺️ Future Roadmap
+
+- 📂 Multi-file Project Workspace
+- 👀 Interviewer-Only Watch Mode
+- 🌐 Judge0 / Piston Fallback Execution Engine
+- 📹 Screen Sharing
+- 🧪 Automated Coding Assessments
+- 📊 Interview Performance Analytics
+- 📄 Export Session History
+- 🔒 End-to-End Encrypted Private Rooms
+- 📱 Responsive Mobile Interface
+
+---
+
+# 🤝 Contributing
+
+Contributions, suggestions, and bug reports are welcome!
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+Feel free to use, modify, and distribute this project in accordance with the license terms.
+
+---
+
+<div align="center">
+
+**Built  using React, TypeScript, Node.js, Socket.io, Y.js, PostgreSQL, and AI.**
+
+</div>
